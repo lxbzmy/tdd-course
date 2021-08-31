@@ -1,7 +1,10 @@
 package tdd.case4
 
+import spock.lang.Issue
 import spock.lang.Specification
+import spock.lang.Title
 
+@Title("Stack数据结构测试")
 class StackTest2 extends Specification {
 
   void 空栈size是0() {
@@ -11,12 +14,13 @@ class StackTest2 extends Specification {
     stack.size() == 0;
   }
 
-  void 入栈后size增加1() {
-    given:
+  @Issue("TDD-1")
+  def 入栈后size增加1() {
+    given: "一个空栈"
     def stack = new Stack();
-    when:
+    when: "push一个元素"
     stack.push("🐶")
-    then:
+    then: "size增加1"
     stack.size() == 1;
   }
 

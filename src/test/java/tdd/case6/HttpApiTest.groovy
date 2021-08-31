@@ -76,15 +76,15 @@ class HttpApiTest extends Specification {
     response.success == true
   }
 
-def return_401_if_not_login() {
-  when:
-  def response = http.get([path : 'product/_search',
-                           query: [page: 3]
-  ]);
-  //{"hello":"world"}
-  then:
-  HttpResponseException e = thrown()
-  e.getStatusCode() == 401;
-}
+  def return_401_if_not_login() {
+    when:
+    def response = http.get([path : 'product/_search',
+                             query: [page: 3]
+    ]);
+    //{"hello":"world"}
+    then:
+    HttpResponseException e = thrown()
+    e.getStatusCode() == 401;
+  }
 
 }
