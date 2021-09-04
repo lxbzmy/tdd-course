@@ -27,7 +27,7 @@ class HttpApiTest2 extends Specification {
   def login_success() {
     when:
     def response = http.post([path              : 'login',
-                              requestContentType: JSON,
+                              requestContentType: URLENC,
                               body              : ["username": "root",
                                                    "password": "root"
                               ]

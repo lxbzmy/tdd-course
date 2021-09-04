@@ -9,8 +9,8 @@
 ## LOGIN
 
     POST http://mock-api.com/k7gPXAgl.mock/spock/login
-    Content-Type: application/json
-    {"username":"root","password":"root"}
+    Content-Type: application/x-www-form-urlencoded
+    username=root&password=root
     
     {"success":true,"username":"root"}
 
