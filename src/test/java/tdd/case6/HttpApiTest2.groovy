@@ -11,7 +11,7 @@ import static groovyx.net.http.ContentType.JSON
 import static groovyx.net.http.ContentType.URLENC
 
 @Stepwise
-class HttpApiTest extends Specification {
+class HttpApiTest2 extends Specification {
 
   @Shared
   def http = new HTTPBuilder("http://mock-api.com/k7gPXAgl.mock/spock/");

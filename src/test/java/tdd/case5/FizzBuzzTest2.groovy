@@ -15,7 +15,7 @@ import tdd.case3.FizzBuzz2
  * </pre>
  */
 @Title("FizzBuzz验证")
-class FizzBuzzTest extends Specification {
+class FizzBuzzTest2 extends Specification {
   @Subject
   FizzBuzz2 sut = new FizzBuzz2();
 
